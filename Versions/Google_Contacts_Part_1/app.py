@@ -2,7 +2,8 @@ from flask import Flask, render_template, request
 from contact import ContactManager
 
 # Path to the embedded CSV file in the folder
-csv_file_path = r'E:\Versions\Google_Contacts_Part_1\contacts.csv'
+csv_file_path = r'PathToYourDirectory\Versions\Google_Contacts_Part_1\contacts.csv'
+
 
 def add_contact(name_ctt, email_ctt, phone_ctt):
     contact_manager = ContactManager(csv_file_path)
