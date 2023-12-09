@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <!-- Bootstrap CSS local -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="static/index.css">
+
+</head>
+
+<body class="container mt-5">
+
+    <h2 class="mb-4">Contact Form</h2>
+
+    <div class="message_center">
+        {% if message %}
+        <p>{{ message }}</p>
+        {% endif %}
+    </div>
+
+    <form action="/save_contact" method="post" enctype="multipart/form-data" id="contact_form">
+
+        <h3 class="mb-3">Contact Information</h3>
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control custom-width" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control custom-width-email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone :</label>
+            <input type="tel" class="form-control custom-width-phone" id="phone" name="phone" title="Format: Country Code - Number"
+                required>
+        </div>
+
+        <hr class="mb-4">
+
+        <button type="submit" class=" button-drive" name="save_drive">Save to Drive</button>
+        <button type="submit" class="button" name="save_contact" id="save_contact_button">Save Contact</button>
+
+    </form>
+
+    <script>
+        document.getElementById('contact_form').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                document.getElementById('save_contact_button').click();
+            }
+        });
+    </script>
+
+</body>
+
+</html>

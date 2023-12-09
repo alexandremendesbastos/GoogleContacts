@@ -1,0 +1,73 @@
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-family: 'Arial', sans-serif;
+}
+
+h2 {
+    color: #007bff;
+    margin-top: 200px;
+    text-align: center;
+}
+
+h3 {
+    color: #28a745;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: large;
+    font-weight: bold;
+}
+
+.button {
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+    width: 230px;
+    height: 30px;
+    font-weight: bold;
+}
+
+.button-drive {
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+    width: 230px;
+    height: 30px;
+    font-weight: bold;
+}
+
+.message_center {
+    text-align: center;
+}
+
+.message_center p {
+    display: inline-block;
+}
+
+.custom-width {
+    height: 20px;
+    width: 400px;
+}
+
+.custom-width-email {
+    width: 400px;
+    height: 20px;
+}
+
+.custom-width-phone {
+    height: 20px;
+    width: 388px;
+}
