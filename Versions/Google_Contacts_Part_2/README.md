@@ -26,8 +26,8 @@ To follow Flask project best practices and enhance maintainability, the project'
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/your_username/contact-manager.git`
-2. Install dependencies: `pip install -r requirements.txt`
+1. Clone the repository: `git clone https://github.com/alexandremendesbastos/GoogleContacts.git`
+2. Install dependencies: `pip install flask`
 3. Run the application: `python app.py`
 4. Access the application at [http://localhost:5000](http://localhost:5000)
 
